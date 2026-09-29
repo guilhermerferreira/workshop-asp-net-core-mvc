@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using SalesWebMVC.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("SalesWebMVCContext") ?? throw new InvalidOperationException("Connection string 'SalesWebMVCContext' not found.");
 
