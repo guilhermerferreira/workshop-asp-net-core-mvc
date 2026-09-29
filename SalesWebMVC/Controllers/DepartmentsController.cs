@@ -15,6 +15,7 @@ public class DepartmentsController : Controller
     // GET: DEPARTMENTS
     public async Task<IActionResult> Index()    
     {
+        List<Department> departments = new List<Department>();
         return View(await _context.Department.ToListAsync());
     }
 
